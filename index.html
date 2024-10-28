@@ -6,7 +6,7 @@
         <title>Jogo de Capturar Objetos Caindo</title>
         <style>
             canvas {
-                background-color: #d22d93;
+                background-color: rgb(112,219,147);
                 display: block;
                 margin: 0 auto;
             }
@@ -32,12 +32,12 @@
             let setaEsquerda = false;
             let setaDireita = false;
             function desenhaJogador() {
-                ctx.fillStyle = "black";
+                ctx.fillStyle = "green";
                 ctx.fillRect(jogadorX, canvas.height - jogadorAltura, jogadorLargura, jogadorAltura);
             }
    
             function desenhaObjeto() {
-                ctx.fillStyle = "yellow";
+                ctx.fillStyle = "red";
                 ctx.fillRect(objetoX, objetoY, objetoLargura, objetoAltura);
             }
    
